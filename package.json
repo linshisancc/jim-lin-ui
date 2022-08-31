@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz"
+    "dev": "dumi dev",
+    "build:site": "rimraf doc-site && dumi build",
+    "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
+    "commit": "git-cz",
+    "deploy:site": "npm run build:site && gh-pages -d doc-site"
   },
   "keywords": [],
   "author": "",
@@ -17,16 +21,20 @@
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "commitizen": "^4.2.5",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
+    "dumi": "^1.1.47",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.1",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "serve": "^14.0.1",
     "typescript": "^4.8.2",
     "yarn": "^1.22.19"
   },

@@ -2,6 +2,10 @@ import pt from 'prop-types';
 import React from 'react';
 
 export interface IAlertProps extends React.PropsWithChildren {
+  /**
+   * @description      Alert 的类型
+   * @default          'info'
+   */
   type?: 'info' | 'positive' | 'negative' | 'warning';
 }
 
