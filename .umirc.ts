@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 let base = '/jim-lin-ui';
-let publicPath = '/jim-lin-ui';
+let publicPath = '/jim-lin-ui/';
 
 const isPreview = process.env.SITE_BUILD_ENV === 'PREVIEW';
 
