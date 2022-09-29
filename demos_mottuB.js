@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[4],{bpQ1:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),u=()=>l.a.createElement("button",null,"\u6211\u662f\u4e00\u9897\u6d4b\u8bd5\u6309\u94ae"),c=u;n["default"]=()=>l.a.createElement(c,null,"\u8fd9\u662f\u4e00\u9897\u57fa\u7840\u6309\u94ae")}}]);
