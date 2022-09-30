@@ -1,6 +1,5 @@
 import pt from 'prop-types';
 import React from 'react';
-import './style';
 export interface IAlertProps extends React.PropsWithChildren {
   /**
    * @description      Alert 的类型

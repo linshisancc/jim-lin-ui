@@ -1,2 +1,5 @@
 node_modules
 src/.umi
+src/.umi-production
+lib
+esm

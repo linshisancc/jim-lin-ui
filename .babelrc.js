@@ -1,23 +1,16 @@
 module.exports = {
-  presets: [
-    ['@babel/preset-env', {}],
+  presets: [['@babel/preset-env'], ['@babel/preset-react'], ['@babel/preset-typescript']],
+  plugins: [
+    '@babel/proposal-class-properties',
+    '@babel/plugin-transform-runtime',
     [
-      '@babel/preset-react',
+      'import',
       {
-        runtime: 'automatic', //启用新的jsx转换规则
+        libraryName: 'jim-lin-ui',
+        libraryDirectory: 'lib',
+        style: true,
       },
     ],
-    ['@babel/preset-typescript'],
-  ],
-  plugins: ['@babel/proposal-class-properties', '@babel/plugin-transform-runtime', 
-    [
-      "import",
-      {
-        "libraryName": "jim-lin-ui",
-        "libraryDirectory": "lib",   
-        "style": true
-      }
-    ]
   ],
   env: {
     esm: {
